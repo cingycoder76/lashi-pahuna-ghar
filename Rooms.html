@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lashi Pahuna Gahr - Rooms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-6 sm:px-12 flex items-center justify-between py-4">
+        <a href="/" class="text-xl font-semibold text-blue-500">Lashi Pahuna Gahr</a>
+        <ul class="hidden md:flex items-center space-x-8 text-gray-700">
+            <li><a href="/" class="hover:text-blue-500 transition">Home</a></li>
+            <li><a href="Rooms.html" class="hover:text-blue-500 transition">Rooms</a></li>
+            <li><a href="about.html" class="hover:text-blue-500 transition">About Us</a></li>
+            <li><a href="amenities.html" class="hover:text-blue-500 transition">Amenities</a></li>
+           
+        </ul>
+        <div class="md:hidden">
+            <button class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 hidden">
+        <div class="bg-white p-4 h-full">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-semibold">Lashi Pahuna Gahr</a>
+                <button id="close-menu" class="text-black">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <ul class="mt-6 space-y-4">
+                <li><a href="#home" class="text-black hover:text-gray-700">Home</a></li>
+                <li><a href="#about" class="text-black hover:text-gray-700">About Us</a></li>
+                <li><a href="#rooms" class="text-black hover:text-gray-700">Rooms</a></li>
+                <li><a href="#amenities" class="text-black hover:text-gray-700">Amenities</a></li>
+                <li><a href="#contact" class="text-black hover:text-gray-700">Contact</a></li>
+                <li><a href="#book" class="bg-orange-500 text-white px-4 py-2 rounded-md">Book Now</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-72" style="background-image: url('/assests/images/build.jpg');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <h1 class="text-white text-4xl sm:text-5xl font-bold">Our Rooms</h1>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-16">
+        <div class="container mx-auto px-6 sm:px-12">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900">Explore Our Exclusive Rooms</h2>
+                <p class="text-lg text-gray-700 mt-2">Designed for comfort, luxury, and relaxation.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Room 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/500x300" alt="Deluxe Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Deluxe Room</h3>
+                        <p class="text-gray-700 mt-2">Spacious and luxurious room with a king-size bed, a private balcony, and modern amenities.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-500">$120/night</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/500x300" alt="Standard Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Standard Room</h3>
+                        <p class="text-gray-700 mt-2">A cozy and comfortable room with all essential amenities for a relaxing stay.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-500">$80/night</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/500x300" alt="VIP Suite" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">VIP Suite</h3>
+                        <p class="text-gray-700 mt-2">An exclusive suite with premium features, a private lounge, and breathtaking views.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-500">$250/night</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="bg-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-red-700 transition duration-300 ease-in-out transform hover:scale-105 w-auto">
+                    Book Room
+                </a>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-8">
+        <div class="container mx-auto px-6 sm:px-12 flex flex-col md:flex-row justify-between">
+            <p>&copy; 2024 Lashi Pahuna Gahr. All rights reserved.</p>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-blue-500">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-blue-500">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-blue-500">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/assests/JS/app.js"></script>
+</body>
+</html>
